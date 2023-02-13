@@ -1,0 +1,185 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    position:relative;
+    height:100vh;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#clock{
+    position:fixed;
+    margin-top:50px;
+    font-size:100px;
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+
+#weather{
+    position:fixed;
+    bottom:0;
+    margin-bottom:30px;
+    margin-left:10px;
+    font-size:25px;
+}
+
+#greeting{
+    position:fixed;
+    top:250px;
+    font-size:70px;
+    margin-bottom:20px;
+    font-family: 'Lobster', cursive;
+}
+
+#login-form{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-form>input{
+    border-radius:10px;
+    border:none;
+    width:250px;
+    height:25px;
+    padding:0px 8px;
+}
+
+#login-form>button{
+    border-radius:10px;
+    border:none;
+    width:60px;
+    height:25px;
+    padding:0px 8px;
+}
+
+.hidden{
+    visibility:collapse;
+}
+
+#todos{
+    position:fixed;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#todo-form{
+    position:fixed;
+    width:100%;
+    top:400px;
+    display: flex;
+    justify-content: center;
+}
+
+#todos>ul{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todo-form>input{
+    border-radius:10px;
+    border:none;
+    width:250px;
+    height:25px;
+    padding:0px 8px;
+}
+
+
+#todo-list{
+    position:fixed;
+    width:10%;
+    top:430px;
+}
+
+#todo-list>li{
+    margin-bottom:5px;
+}
+
+#todo-list>li>button{
+    background: transparent;
+    border:none;
+    
+}
+
+#todo-list>li>button:hover{
+    cursor: pointer;
+    scale:1.5;
+    transition:scale 0.2s ease-in;
+}
+
+#todo-list>li>span:first-child{
+    margin-right:3px;
+}
+
+#quote{
+    position:fixed;
+    bottom:0;
+    width:40%;
+    right:0;
+    left:0;
+    margin:auto;
+    margin-bottom:30px;
+    font-size:20px;
+}
+
+#quote-letter{
+    margin-bottom:10px;
+    text-align: center;
+}
+
+#quote-author{
+    text-align:center;
+}
+
+img{
+    position:fixed;
+    top:0;
+    opacity: 0.5;
+    z-index: -1;
+}
