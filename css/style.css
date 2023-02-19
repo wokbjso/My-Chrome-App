@@ -53,6 +53,12 @@ table {
     width:100%;
 }
 
+@media screen and (max-width:600px){
+    #clock{
+        font-size:60px;
+    }
+}
+
 #weather{
     position:fixed;
     bottom:0;
@@ -69,19 +75,24 @@ table {
     font-family: 'Lobster', cursive;
 }
 
+@media screen and (max-width:600px){
+    #greeting{
+        font-size:50px;
+    }
+}
+
 #login-form{
     width:100%;
     height:100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
 }
 
 #login-form>input{
     border-radius:10px;
     border:none;
     width:250px;
-    height:25px;
+    height:30px;
     padding:0px 8px;
 }
 
@@ -89,7 +100,7 @@ table {
     border-radius:10px;
     border:none;
     width:60px;
-    height:25px;
+    height:30px;
     padding:0px 8px;
 }
 
@@ -175,6 +186,12 @@ table {
 
 #quote-author{
     text-align:center;
+}
+
+@media screen and (max-width:600px){
+    #quote-letter,#quote-author{
+        font-size:8px;
+    }
 }
 
 img{
